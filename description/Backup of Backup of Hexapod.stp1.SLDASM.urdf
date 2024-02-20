@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Backup of Backup of Hexapod.stp1.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00743699363891465 -0.00435208736761716 -0.00176324626442183"
+        rpy="0 0 0" />
+      <mass
+        value="0.354275908519978" />
+      <inertia
+        ixx="0.00128299638160271"
+        ixy="-2.96818889988514E-19"
+        ixz="5.37275395142493E-21"
+        iyy="0.00321878824734248"
+        iyz="-4.83263978028562E-22"
+        izz="0.00450030847932636" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Backup of Backup of Hexapod.stp1.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Backup of Backup of Hexapod.stp1.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="leg1">
+    <inertial>
+      <origin
+        xyz="0.202384249841064 -0.127011475604123 0.0381157119639531"
+        rpy="0 0 0" />
+      <mass
+        value="0.00688645956394057" />
+      <inertia
+        ixx="3.22067915293222E-06"
+        ixy="7.92323563548771E-08"
+        ixz="4.67448694133045E-07"
+        iyy="3.22067915293222E-06"
+        iyz="-4.6744869413304E-07"
+        izz="1.08352793957697E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Backup of Backup of Hexapod.stp1.SLDASM/meshes/leg1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Backup of Backup of Hexapod.stp1.SLDASM/meshes/leg1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="leg1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
